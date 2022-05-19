@@ -27,7 +27,7 @@ class SliderElement extends StatelessWidget {
               Scaler.getEmptySize(context) * Scaler.carouselScale * imageScale,
         ),
         SizedBox(
-          height: verticalSpace * (Scaler.getEmptySize(context) / 812),
+          height: verticalSpace * Scaler.getMainScale(context),
         ),
         Text(
           sliderText,

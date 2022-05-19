@@ -23,10 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "onboardingSlide1": MessageLookupByLibrary.simpleMessage(
-            "Фонд поддержки стартапов «Спутник»"),
+            "Фонд поддержки \nстартапов «Спутник»"),
         "onboardingSlide2": MessageLookupByLibrary.simpleMessage(
-            "Мы помогаем сфокусироваться на главном — предпринимательстве"),
+            "Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве"),
         "onboardingSlide3": MessageLookupByLibrary.simpleMessage(
-            "Сделано ботаниками для ботаников")
+            "Сделано ботаниками для \nботаников")
       };
 }

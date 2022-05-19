@@ -34,7 +34,7 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(top: 24),
+          padding: EdgeInsets.only(top: 24 * Scaler.getMainScale(context)),
           child: Stack(
             children: [
               Column(
@@ -69,10 +69,11 @@ class OnboardingScreen extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 39),
+                padding:
+                    EdgeInsets.only(left: 39 * Scaler.getMainScale(context)),
                 child: Image.asset(
                   LibraryAssets.logo,
-                  height: 85,
+                  height: 85 * Scaler.getMainScale(context),
                 ),
               ),
             ],
