@@ -6,4 +6,12 @@ class LibraryAssets {
 
   //logo
   static const String logo = 'assets/logo.png';
+
+  //userNotFound
+  static const String userNotFound = 'assets/userNotFound.png';
+
+  //profileMenu
+  static const String lover = 'assets/lover.png';
+  static const String medal = 'assets/medal.png';
+  static const String dollar = 'assets/dollar.png';
 }

@@ -23,19 +23,18 @@ class SliderElement extends StatelessWidget {
       children: [
         Image.asset(
           sliderImage,
-          height:
-              Scaler.getEmptySize(context) * Scaler.carouselScale * imageScale,
+          filterQuality: FilterQuality.high,
+          height: Scaler.getEmptySizeHeight(context) *
+              Scaler.carouselScale *
+              imageScale,
         ),
         SizedBox(
-          height: verticalSpace * Scaler.getMainScale(context),
+          height: verticalSpace * Scaler.getMainScaleHeight(context),
         ),
         Text(
           sliderText,
           textAlign: TextAlign.center,
-          style: LibraryStyles.poppins(
-            fontSize: 22,
-            fontWeight: FontWeight.w700,
-          ),
+          style: LibraryStyles.poppins22Bold,
         ),
       ],
     );

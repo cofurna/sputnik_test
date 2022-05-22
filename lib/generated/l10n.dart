@@ -79,6 +79,226 @@ class S {
       args: [],
     );
   }
+
+  /// `Next`
+  String get next {
+    return Intl.message(
+      'Next',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `GitHub social`
+  String get githubSocial {
+    return Intl.message(
+      'GitHub social',
+      name: 'githubSocial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `\nand `
+  String get and {
+    return Intl.message(
+      '\nand ',
+      name: 'and',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter nickname on github`
+  String get enterNicknameOnGithub {
+    return Intl.message(
+      'Enter nickname on github',
+      name: 'enterNicknameOnGithub',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter nickname`
+  String get enterNickname {
+    return Intl.message(
+      'Enter nickname',
+      name: 'enterNickname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nickname`
+  String get nickname {
+    return Intl.message(
+      'Nickname',
+      name: 'nickname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By signing in, I agree with `
+  String get agreeWith {
+    return Intl.message(
+      'By signing in, I agree with ',
+      name: 'agreeWith',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms of Use `
+  String get terms {
+    return Intl.message(
+      'Terms of Use ',
+      name: 'terms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User with this nickname not found!`
+  String get userNotFound {
+    return Intl.message(
+      'User with this nickname not found!',
+      name: 'userNotFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Follow on github`
+  String get followOnGithub {
+    return Intl.message(
+      'Follow on github',
+      name: 'followOnGithub',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Company - `
+  String get company {
+    return Intl.message(
+      'Company - ',
+      name: 'company',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email - `
+  String get email {
+    return Intl.message(
+      'Email - ',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bio - `
+  String get bio {
+    return Intl.message(
+      'Bio - ',
+      name: 'bio',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Following you`
+  String get followingYou {
+    return Intl.message(
+      'Following you',
+      name: 'followingYou',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View all`
+  String get viewAll {
+    return Intl.message(
+      'View all',
+      name: 'viewAll',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Repositories`
+  String get repositories {
+    return Intl.message(
+      'Repositories',
+      name: 'repositories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My following`
+  String get myFollowing {
+    return Intl.message(
+      'My following',
+      name: 'myFollowing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My followers`
+  String get myFollowers {
+    return Intl.message(
+      'My followers',
+      name: 'myFollowers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My badges`
+  String get myBadges {
+    return Intl.message(
+      'My badges',
+      name: 'myBadges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My organizatios`
+  String get myOrganizatios {
+    return Intl.message(
+      'My organizatios',
+      name: 'myOrganizatios',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -22,11 +22,38 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "agreeWith": MessageLookupByLibrary.simpleMessage(
+            "By signing in, I agree with "),
+        "and": MessageLookupByLibrary.simpleMessage("\nand "),
+        "bio": MessageLookupByLibrary.simpleMessage("Bio - "),
+        "company": MessageLookupByLibrary.simpleMessage("Company - "),
+        "email": MessageLookupByLibrary.simpleMessage("Email - "),
+        "enterNickname": MessageLookupByLibrary.simpleMessage("Enter nickname"),
+        "enterNicknameOnGithub":
+            MessageLookupByLibrary.simpleMessage("Enter nickname on github"),
+        "followOnGithub":
+            MessageLookupByLibrary.simpleMessage("Follow on github"),
+        "followingYou": MessageLookupByLibrary.simpleMessage("Following you"),
+        "githubSocial": MessageLookupByLibrary.simpleMessage("GitHub social"),
+        "myBadges": MessageLookupByLibrary.simpleMessage("My badges"),
+        "myFollowers": MessageLookupByLibrary.simpleMessage("My followers"),
+        "myFollowing": MessageLookupByLibrary.simpleMessage("My following"),
+        "myOrganizatios":
+            MessageLookupByLibrary.simpleMessage("My organizatios"),
+        "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "nickname": MessageLookupByLibrary.simpleMessage("Nickname"),
         "onboardingSlide1": MessageLookupByLibrary.simpleMessage(
             "Фонд поддержки \nстартапов «Спутник»"),
         "onboardingSlide2": MessageLookupByLibrary.simpleMessage(
             "Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве"),
         "onboardingSlide3": MessageLookupByLibrary.simpleMessage(
-            "Сделано ботаниками для \nботаников")
+            "Сделано ботаниками для \nботаников"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "repositories": MessageLookupByLibrary.simpleMessage("Repositories"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "terms": MessageLookupByLibrary.simpleMessage("Terms of Use "),
+        "userNotFound": MessageLookupByLibrary.simpleMessage(
+            "User with this nickname not found!"),
+        "viewAll": MessageLookupByLibrary.simpleMessage("View all")
       };
 }

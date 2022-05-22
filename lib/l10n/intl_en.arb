@@ -1,5 +1,27 @@
 {
     "onboardingSlide1": "Фонд поддержки \nстартапов «Спутник»",
     "onboardingSlide2": "Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве",
-    "onboardingSlide3": "Сделано ботаниками для \nботаников"
+    "onboardingSlide3": "Сделано ботаниками для \nботаников",
+    "next": "Next",
+    "githubSocial": "GitHub social",
+    "and": "\nand ",
+    "privacyPolicy": "Privacy Policy",
+    "enterNicknameOnGithub": "Enter nickname on github",
+    "enterNickname": "Enter nickname",
+    "nickname": "Nickname",
+    "search": "Search",
+    "agreeWith": "By signing in, I agree with ",
+    "terms": "Terms of Use ",
+    "userNotFound": "User with this nickname not found!",
+    "followOnGithub": "Follow on github",
+    "company": "Company - ",
+    "email": "Email - ",
+    "bio": "Bio - ",
+    "followingYou": "Following you",
+    "viewAll": "View all",
+    "repositories": "Repositories",
+    "myFollowing": "My following",
+    "myFollowers": "My followers",
+    "myBadges": "My badges",
+    "myOrganizatios": "My organizatios"
 }
