@@ -10,7 +10,7 @@ class NavBarButton extends StatelessWidget with BaseButton {
     required this.title,
     required this.icon,
     required this.hasNotification,
-    this.width = 49,
+    this.width = 60,
     this.height = 39,
     this.iconSize = 20,
     Key? key,

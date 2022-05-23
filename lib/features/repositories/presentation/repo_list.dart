@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sputnik_test/components/buttons/text_button_custom.dart';
 import 'package:sputnik_test/components/error_text.dart';
 import 'package:sputnik_test/components/library_loader.dart';
 import 'package:sputnik_test/core/entities/user_info.dart';
+import 'package:sputnik_test/core/services/github_link_generator.dart';
 import 'package:sputnik_test/features/repositories/presentation/bloc/repo_bloc.dart';
 import 'package:sputnik_test/features/repositories/presentation/repo_card.dart';
 import 'package:sputnik_test/statics/styles.dart';
 
 import 'package:sputnik_test/generated/l10n.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class RepoList extends StatefulWidget {
   const RepoList({required this.user});
@@ -17,7 +20,11 @@ class RepoList extends StatefulWidget {
   State<RepoList> createState() => _RepoListState();
 }
 
-class _RepoListState extends State<RepoList> {
+class _RepoListState extends State<RepoList>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
   @override
   void initState() {
     super.initState();
@@ -26,6 +33,7 @@ class _RepoListState extends State<RepoList> {
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Column(
       children: [
         Padding(
@@ -37,11 +45,13 @@ class _RepoListState extends State<RepoList> {
                 S.current.repositories,
                 style: LibraryStyles.poppins34Bold,
               ),
-              Text(
-                S.current.viewAll,
-                style: LibraryStyles.poppins15Normal.copyWith(
-                  decoration: TextDecoration.underline,
-                ),
+              TextButtonCustom(
+                onTap: () async {
+                  await launchUrlString(
+                    GithubLinkGenerator.gitHubUserRepoUrl(widget.user.login),
+                  );
+                },
+                text: S.current.viewAll,
               ),
             ],
           ),

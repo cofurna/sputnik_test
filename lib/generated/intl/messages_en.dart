@@ -46,15 +46,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("My organizatios"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "nickname": MessageLookupByLibrary.simpleMessage("Nickname"),
+        "noFollowers": MessageLookupByLibrary.simpleMessage("No followers"),
         "noFollowing": MessageLookupByLibrary.simpleMessage("No following"),
         "noRepositories":
             MessageLookupByLibrary.simpleMessage("No repositories"),
         "onboardingSlide1": MessageLookupByLibrary.simpleMessage(
-            "Фонд поддержки \nстартапов «Спутник»"),
+            "Startup Support \nFund Sputnik"),
         "onboardingSlide2": MessageLookupByLibrary.simpleMessage(
-            "Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве"),
-        "onboardingSlide3": MessageLookupByLibrary.simpleMessage(
-            "Сделано ботаниками для \nботаников"),
+            "We help \nto focus on the \nmain thing — \nentrepreneurship"),
+        "onboardingSlide3":
+            MessageLookupByLibrary.simpleMessage("Made by nerds for \nnerds"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "repositories": MessageLookupByLibrary.simpleMessage("Repositories"),
@@ -65,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "userNotFound": MessageLookupByLibrary.simpleMessage(
             "User with this nickname not found!"),
         "viewAll": MessageLookupByLibrary.simpleMessage("View all"),
+        "viewAllButton": MessageLookupByLibrary.simpleMessage("View all"),
         "wrong": MessageLookupByLibrary.simpleMessage("Something went wrong!")
       };
 }

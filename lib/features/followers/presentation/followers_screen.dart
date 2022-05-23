@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sputnik_test/components/textfields/search_textfield.dart';
 import 'package:sputnik_test/core/entities/user_info.dart';
 import 'package:sputnik_test/features/followers/presentation/bloc/bloc/followers_bloc.dart';
-import 'package:sputnik_test/features/followers/presentation/components/divider.dart';
+
 import 'package:sputnik_test/features/followers/presentation/components/followers_list.dart';
 import 'package:sputnik_test/generated/l10n.dart';
 import 'package:sputnik_test/statics/styles.dart';
@@ -16,8 +16,13 @@ class FollowersScreen extends StatefulWidget {
   State<FollowersScreen> createState() => _FollowersScreenState();
 }
 
-class _FollowersScreenState extends State<FollowersScreen> {
+class _FollowersScreenState extends State<FollowersScreen>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
   late TextEditingController controller;
+
   @override
   void initState() {
     controller = TextEditingController();
@@ -26,6 +31,7 @@ class _FollowersScreenState extends State<FollowersScreen> {
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Column(
       children: [
         const SizedBox(

@@ -1,7 +1,7 @@
 {
-    "onboardingSlide1": "Фонд поддержки \nстартапов «Спутник»",
-    "onboardingSlide2": "Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве",
-    "onboardingSlide3": "Сделано ботаниками для \nботаников",
+    "onboardingSlide1": "Startup Support \nFund Sputnik",
+    "onboardingSlide2": "We help \nto focus on the \nmain thing — \nentrepreneurship",
+    "onboardingSlide3": "Made by nerds for \nnerds",
     "next": "Next",
     "githubSocial": "GitHub social",
     "and": "\nand ",
@@ -19,6 +19,7 @@
     "bio": "Bio - ",
     "followingYou": "Following you",
     "viewAll": "View all",
+    "viewAllButton": "View all",
     "repositories": "Repositories",
     "myFollowing": "My following",
     "myFollowers": "My followers",
@@ -32,5 +33,6 @@
     "wrong": "Something went wrong!",
     "tooManyAttempts": "Too many attempts, please try again later!",
     "noRepositories": "No repositories",
-    "noFollowing": "No following"
+    "noFollowing": "No following",
+    "noFollowers": "No followers"
 }

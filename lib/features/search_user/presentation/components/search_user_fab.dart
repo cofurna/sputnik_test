@@ -25,8 +25,11 @@ class SearchUserFAB extends StatelessWidget {
             onTap: controller.text.isEmpty
                 ? null
                 : () {
-                    BlocProvider.of<SearchUserBloc>(context)
-                        .add(OnSearchUser(controller.text));
+                    BlocProvider.of<SearchUserBloc>(context).add(
+                      OnSearchUser(
+                        controller.text.trim(),
+                      ),
+                    );
                   },
             text: S.current.search,
           ),

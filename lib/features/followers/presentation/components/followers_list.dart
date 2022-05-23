@@ -53,7 +53,7 @@ class _FollowersListState extends State<FollowersList> {
           return ErrorText(text: S.current.tooManyAttempts);
         }
         if (state is FollowersEmptyState) {
-          return ErrorText(text: S.current.noFollowing);
+          return ErrorText(text: S.current.noFollowers);
         }
         if (state is FollowersLoadedState) {
           return Expanded(

@@ -1,12 +1,14 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:sputnik_test/components/buttons/gradient_icon_text_button.dart';
+import 'package:sputnik_test/core/services/github_link_generator.dart';
 import 'package:sputnik_test/features/home/presentation/components/divider.dart';
 import 'package:sputnik_test/core/entities/user_info.dart';
 import 'package:sputnik_test/statics/colors.dart';
 import 'package:sputnik_test/statics/icons.dart';
 import 'package:sputnik_test/statics/styles.dart';
 import 'package:sputnik_test/generated/l10n.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class HomeUserInfo extends StatelessWidget {
   const HomeUserInfo({required this.userInfo});
@@ -29,7 +31,11 @@ class HomeUserInfo extends StatelessWidget {
               ),
             ),
             GradientIconTextButton(
-              onTap: () {},
+              onTap: () async {
+                await launchUrlString(
+                  GithubLinkGenerator.gitHubUserUrl(userInfo.login),
+                );
+              },
               text: S.current.followOnGithub,
               icon: LibraryIcons.plusicon,
             ),

@@ -50,30 +50,30 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Фонд поддержки \nстартапов «Спутник»`
+  /// `Startup Support \nFund Sputnik`
   String get onboardingSlide1 {
     return Intl.message(
-      'Фонд поддержки \nстартапов «Спутник»',
+      'Startup Support \nFund Sputnik',
       name: 'onboardingSlide1',
       desc: '',
       args: [],
     );
   }
 
-  /// `Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве`
+  /// `We help \nto focus on the \nmain thing — \nentrepreneurship`
   String get onboardingSlide2 {
     return Intl.message(
-      'Мы помогаем \nсфокусироваться на \nглавном — \nпредпринимательстве',
+      'We help \nto focus on the \nmain thing — \nentrepreneurship',
       name: 'onboardingSlide2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Сделано ботаниками для \nботаников`
+  /// `Made by nerds for \nnerds`
   String get onboardingSlide3 {
     return Intl.message(
-      'Сделано ботаниками для \nботаников',
+      'Made by nerds for \nnerds',
       name: 'onboardingSlide3',
       desc: '',
       args: [],
@@ -250,6 +250,16 @@ class S {
     );
   }
 
+  /// `View all`
+  String get viewAllButton {
+    return Intl.message(
+      'View all',
+      name: 'viewAllButton',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Repositories`
   String get repositories {
     return Intl.message(
@@ -385,6 +395,16 @@ class S {
     return Intl.message(
       'No following',
       name: 'noFollowing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No followers`
+  String get noFollowers {
+    return Intl.message(
+      'No followers',
+      name: 'noFollowers',
       desc: '',
       args: [],
     );

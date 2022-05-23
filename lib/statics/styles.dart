@@ -3,7 +3,7 @@ import 'package:sputnik_test/statics/colors.dart';
 
 class LibraryStyles {
   static const poppins17Medium = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Montserrat',
     color: LibraryColors.mainGreyColor,
     fontSize: 17,
     fontWeight: FontWeight.w500,

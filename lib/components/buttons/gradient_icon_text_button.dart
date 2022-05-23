@@ -22,8 +22,10 @@ class GradientIconTextButton extends StatelessWidget with BaseButton {
   final IconData icon;
   final VoidCallback? onTap;
   final TextStyle? textStyle;
-  final double? iconSize;
+  final double iconSize;
   final Color? iconColor;
+
+  double get space => 10;
 
   @override
   Widget build(BuildContext context) {
@@ -47,19 +49,20 @@ class GradientIconTextButton extends StatelessWidget with BaseButton {
   Widget? get bodyWidget => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 5),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Icon(
               icon,
               size: iconSize,
               color: iconColor,
             ),
-            const SizedBox(width: 10),
             Text(
               text,
               style: textStyle ??
                   LibraryStyles.poppins10Bold.copyWith(
                     color: LibraryColors.white,
                   ),
+              maxLines: 1,
             ),
           ],
         ),
