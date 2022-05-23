@@ -1,12 +1,14 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:sputnik_test/features/home/presentation/home_screen.dart';
+import 'package:sputnik_test/core/entities/repo_info.dart';
+
 import 'package:sputnik_test/statics/colors.dart';
 import 'package:sputnik_test/statics/icons.dart';
 import 'package:sputnik_test/statics/styles.dart';
 import 'package:sputnik_test/utils/extensions/string_ext.dart';
 
-class HomeOneRepository extends StatelessWidget {
-  const HomeOneRepository({
+class RepoCard extends StatelessWidget {
+  const RepoCard({
     required this.oneRepoInfo,
     required this.index,
     required this.listLenght,
@@ -40,10 +42,15 @@ class HomeOneRepository extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.bottomRight,
                       child: Padding(
-                        padding: const EdgeInsets.only(right: 8),
-                        child: Text(
-                          oneRepoInfo.language.abbreviation,
+                        padding: const EdgeInsets.only(
+                          right: 8,
+                          left: 15,
+                          bottom: 10,
+                        ),
+                        child: AutoSizeText(
+                          oneRepoInfo.language?.abbreviation ?? 'UNK',
                           style: LibraryStyles.poppins50Bold,
+                          maxLines: 1,
                         ),
                       ),
                     ),
@@ -82,12 +89,16 @@ class HomeOneRepository extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      oneRepoInfo.name,
-                      style: LibraryStyles.poppins17Medium,
+                    SizedBox(
+                      width: 100,
+                      child: Text(
+                        oneRepoInfo.name,
+                        style: LibraryStyles.poppins17Medium,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
                     Text(
-                      oneRepoInfo.id,
+                      oneRepoInfo.id.toString(),
                       style: LibraryStyles.poppins10Medium
                           .copyWith(color: LibraryColors.secondaryLightGrey),
                     ),

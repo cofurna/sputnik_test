@@ -23,5 +23,14 @@
     "myFollowing": "My following",
     "myFollowers": "My followers",
     "myBadges": "My badges",
-    "myOrganizatios": "My organizatios"
+    "myOrganizatios": "My organizatios",
+    "home": "Home",
+    "followers": "Followers",
+    "chat": "Chat",
+    "profile": "Profile",
+    "dots": "...",
+    "wrong": "Something went wrong!",
+    "tooManyAttempts": "Too many attempts, please try again later!",
+    "noRepositories": "No repositories",
+    "noFollowing": "No following"
 }

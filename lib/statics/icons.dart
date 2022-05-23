@@ -28,4 +28,6 @@ class LibraryIcons {
       IconData(0xe809, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData plusicon =
       IconData(0xe80a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData filter =
+      IconData(0xe80b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }

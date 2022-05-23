@@ -26,15 +26,19 @@ class MessageLookup extends MessageLookupByLibrary {
             "By signing in, I agree with "),
         "and": MessageLookupByLibrary.simpleMessage("\nand "),
         "bio": MessageLookupByLibrary.simpleMessage("Bio - "),
+        "chat": MessageLookupByLibrary.simpleMessage("Chat"),
         "company": MessageLookupByLibrary.simpleMessage("Company - "),
+        "dots": MessageLookupByLibrary.simpleMessage("..."),
         "email": MessageLookupByLibrary.simpleMessage("Email - "),
         "enterNickname": MessageLookupByLibrary.simpleMessage("Enter nickname"),
         "enterNicknameOnGithub":
             MessageLookupByLibrary.simpleMessage("Enter nickname on github"),
         "followOnGithub":
             MessageLookupByLibrary.simpleMessage("Follow on github"),
+        "followers": MessageLookupByLibrary.simpleMessage("Followers"),
         "followingYou": MessageLookupByLibrary.simpleMessage("Following you"),
         "githubSocial": MessageLookupByLibrary.simpleMessage("GitHub social"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "myBadges": MessageLookupByLibrary.simpleMessage("My badges"),
         "myFollowers": MessageLookupByLibrary.simpleMessage("My followers"),
         "myFollowing": MessageLookupByLibrary.simpleMessage("My following"),
@@ -42,6 +46,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("My organizatios"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "nickname": MessageLookupByLibrary.simpleMessage("Nickname"),
+        "noFollowing": MessageLookupByLibrary.simpleMessage("No following"),
+        "noRepositories":
+            MessageLookupByLibrary.simpleMessage("No repositories"),
         "onboardingSlide1": MessageLookupByLibrary.simpleMessage(
             "Фонд поддержки \nстартапов «Спутник»"),
         "onboardingSlide2": MessageLookupByLibrary.simpleMessage(
@@ -49,11 +56,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingSlide3": MessageLookupByLibrary.simpleMessage(
             "Сделано ботаниками для \nботаников"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "repositories": MessageLookupByLibrary.simpleMessage("Repositories"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "terms": MessageLookupByLibrary.simpleMessage("Terms of Use "),
+        "tooManyAttempts": MessageLookupByLibrary.simpleMessage(
+            "Too many attempts, please try again later!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage(
             "User with this nickname not found!"),
-        "viewAll": MessageLookupByLibrary.simpleMessage("View all")
+        "viewAll": MessageLookupByLibrary.simpleMessage("View all"),
+        "wrong": MessageLookupByLibrary.simpleMessage("Something went wrong!")
       };
 }

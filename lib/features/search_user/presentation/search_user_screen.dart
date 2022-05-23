@@ -12,7 +12,7 @@ import 'package:sputnik_test/statics/styles.dart';
 import 'package:sputnik_test/utils/extensions/context_ext.dart';
 import 'package:sputnik_test/utils/navigation/routes.dart';
 import 'package:sputnik_test/utils/scaler.dart';
-import 'components/user_not_found.dart';
+import 'components/search_user_error.dart';
 
 class SearchUserScreen extends StatefulWidget {
   const SearchUserScreen({required this.isFirstLaunch, Key? key})
@@ -77,7 +77,7 @@ class _SearchUserScreenState extends State<SearchUserScreen> {
                         ),
                         const SizedBox(height: 46),
                         NicknameTextfield(controller: controller),
-                        const UserNotFound(),
+                        const SearchUserError(),
                         SizedBox(height: context.isKeyboardOpen ? 0 : 200),
                       ],
                     ),

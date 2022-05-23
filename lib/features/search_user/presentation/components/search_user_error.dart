@@ -6,8 +6,19 @@ import 'package:sputnik_test/generated/l10n.dart';
 import 'package:sputnik_test/statics/colors.dart';
 import 'package:sputnik_test/statics/styles.dart';
 
-class UserNotFound extends StatelessWidget {
-  const UserNotFound({Key? key}) : super(key: key);
+class SearchUserError extends StatelessWidget {
+  const SearchUserError({Key? key}) : super(key: key);
+
+  String getErrorText(SearchUserState state) {
+    if (state is UserNotFoundState) {
+      return S.current.userNotFound;
+    }
+    if (state is TooManyAttemptsState) {
+      return S.current.tooManyAttempts;
+    }
+
+    return S.current.wrong;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +40,13 @@ class UserNotFound extends StatelessWidget {
             const SizedBox(
               height: 17,
             ),
-            Text(
-              state is UserNotFoundState
-                  ? S.current.userNotFound
-                  : "agnjangjksjkgnh sjgjkinsg",
-              textAlign: TextAlign.center,
-              style: LibraryStyles.poppins24Medium
-                  .copyWith(color: LibraryColors.red),
+            Center(
+              child: Text(
+                getErrorText(state),
+                textAlign: TextAlign.center,
+                style: LibraryStyles.poppins24Medium
+                    .copyWith(color: LibraryColors.red),
+              ),
             ),
           ],
         );

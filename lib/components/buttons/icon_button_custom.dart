@@ -10,6 +10,7 @@ class IconButtonCustom extends StatelessWidget with BaseButton {
     this.height = 44,
     this.iconSize = 15,
     this.iconColor = LibraryColors.settingNotificationIcon,
+    this.buttonColor = LibraryColors.textFieldGrey,
     Key? key,
   }) : super(key: key);
 
@@ -19,6 +20,7 @@ class IconButtonCustom extends StatelessWidget with BaseButton {
   final VoidCallback? onTap;
   final double iconSize;
   final Color iconColor;
+  final Color buttonColor;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,7 @@ class IconButtonCustom extends StatelessWidget with BaseButton {
   VoidCallback? get onPressed => onTap;
 
   @override
-  Color get activeColor => LibraryColors.textFieldGrey;
+  Color get activeColor => buttonColor;
   @override
   Color get pressedColor => LibraryColors.totalBlack.withOpacity(0.2);
   @override

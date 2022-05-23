@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:sputnik_test/statics/colors.dart';
 
 class LibraryLoader extends StatelessWidget {
-  const LibraryLoader({Key? key}) : super(key: key);
+  const LibraryLoader({this.size = 80, Key? key}) : super(key: key);
+
+  final double size;
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: SizedBox(
-        height: 80,
-        width: 80,
-        child: CircularProgressIndicator(
+        height: size,
+        width: size,
+        child: const CircularProgressIndicator(
           color: LibraryColors.darkOrange,
         ),
       ),

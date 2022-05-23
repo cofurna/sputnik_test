@@ -14,7 +14,7 @@ mixin BaseButton {
             decoration: BoxDecoration(
               gradient: onPressed == null ? null : gradient,
               borderRadius: borderRadius,
-              color: buttonColor,
+              color: getButtonColor,
               boxShadow: boxShadow,
             ),
             child: Center(child: bodyWidget),
@@ -35,7 +35,7 @@ mixin BaseButton {
         ],
       );
 
-  Color? get buttonColor {
+  Color? get getButtonColor {
     if (onPressed == null) {
       return disabledColor;
     }

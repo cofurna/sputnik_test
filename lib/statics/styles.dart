@@ -43,11 +43,17 @@ class LibraryStyles {
     fontWeight: FontWeight.w500,
     height: 19.5 / 15,
   );
+  static final poppins17Normal = poppins17Medium.copyWith(
+    fontWeight: FontWeight.w400,
+  );
 
   static final poppins17Bold = poppins17Medium.copyWith(
     fontWeight: FontWeight.w700,
   );
-
+  static final poppins20Bold = poppins17Medium.copyWith(
+    fontWeight: FontWeight.w700,
+    height: 24 / 20,
+  );
   static final poppins22Bold = poppins17Medium.copyWith(
     fontSize: 22,
     fontWeight: FontWeight.w700,
@@ -73,6 +79,6 @@ class LibraryStyles {
   static final poppins50Bold = poppins17Medium.copyWith(
     fontSize: 50,
     fontWeight: FontWeight.bold,
-    height: 64 / 50,
+    height: 0.5,
   );
 }

@@ -10,6 +10,7 @@ import 'package:sputnik_test/utils/navigation/routes.dart';
 
 Future<void> main() async {
   await Hive.initFlutter();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,

@@ -4,7 +4,7 @@ import 'package:sputnik_test/components/library_loader.dart';
 import 'package:sputnik_test/core/services/hive_service.dart';
 import 'package:sputnik_test/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:sputnik_test/features/search_user/presentation/bloc/bloc/search_user_bloc.dart';
-import 'package:sputnik_test/statics/colors.dart';
+
 import 'package:sputnik_test/utils/navigation/screens.dart';
 
 class App extends StatefulWidget {

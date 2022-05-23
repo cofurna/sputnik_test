@@ -17,8 +17,10 @@ class SearchUserBloc extends Bloc<SearchUserEvent, SearchUserState> {
 
         result.fold(
           (failure) {
-            if (failure is UserNotFoundFailure) {
+            if (failure is NotFoundedFailure) {
               emit(UserNotFoundState());
+            } else if (failure is TooManyAttemptsFailure) {
+              emit(TooManyAttemptsState());
             } else {
               emit(SomethingWentWrongState());
             }

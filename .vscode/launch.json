@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "sputnik_test",
+            "cwd": "sputnik_test",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sputnik_test (profile mode)",
+            "cwd": "sputnik_test",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sputnik_test (release mode)",
+            "cwd": "sputnik_test",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

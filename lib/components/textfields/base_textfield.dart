@@ -20,22 +20,25 @@ mixin BaseTextfield {
               disabledBorder: outlineInputBorder,
               hintText: hintText,
               hintStyle: hintStyle,
-              suffix: suffix,
+              suffixIcon: suffix,
               contentPadding: contentPadding,
             ),
           ),
-          Padding(
-            padding: labelPadding,
-            child: Text(
-              label,
-              style: labelStyle,
+          if (label != null)
+            Padding(
+              padding: labelPadding,
+              child: Text(
+                label!,
+                style: labelStyle,
+              ),
             ),
-          ),
         ],
       );
 
   //Optional fields
   Widget? get suffix => null;
+  String? get label => null;
+
   EdgeInsetsGeometry? get contentPadding => null;
   EdgeInsetsGeometry get labelPadding => const EdgeInsets.only(
         left: 15,
@@ -50,7 +53,7 @@ mixin BaseTextfield {
       );
 
   //Required fields
-  String get label => throw UnimplementedError();
+
   String get hintText => throw UnimplementedError();
   TextStyle get hintStyle => throw UnimplementedError();
   TextStyle get textStyle => throw UnimplementedError();

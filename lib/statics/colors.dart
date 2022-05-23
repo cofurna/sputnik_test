@@ -18,6 +18,7 @@ class LibraryColors {
   static const Color red = Color(0xffE73A40);
   static const Color dotsDisabled = Color(0xff404040);
   static const Color dividerLine = Color(0xffE8E8E8);
+  static const Color followersDividerLine = Color(0xffECEEF1);
   static const Color yellow = Color(0xffFFCB55);
   static const Color settingNotificationIcon = Color(0xff202020);
   static const Color greyOpacity20 = Color.fromRGBO(229, 229, 234, 0.2);

@@ -299,6 +299,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Followers`
+  String get followers {
+    return Intl.message(
+      'Followers',
+      name: 'followers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chat`
+  String get chat {
+    return Intl.message(
+      'Chat',
+      name: 'chat',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `...`
+  String get dots {
+    return Intl.message(
+      '...',
+      name: 'dots',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Something went wrong!`
+  String get wrong {
+    return Intl.message(
+      'Something went wrong!',
+      name: 'wrong',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Too many attempts, please try again later!`
+  String get tooManyAttempts {
+    return Intl.message(
+      'Too many attempts, please try again later!',
+      name: 'tooManyAttempts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No repositories`
+  String get noRepositories {
+    return Intl.message(
+      'No repositories',
+      name: 'noRepositories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No following`
+  String get noFollowing {
+    return Intl.message(
+      'No following',
+      name: 'noFollowing',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

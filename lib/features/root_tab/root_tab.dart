@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sputnik_test/features/followers/presentation/followers_screen.dart';
 import 'package:sputnik_test/features/home/presentation/home_screen.dart';
 import 'package:sputnik_test/features/profile/presentation/profile_screen.dart';
 import 'package:sputnik_test/features/root_tab/components/library_bottom_navigation_bar.dart';
@@ -46,7 +47,9 @@ class _RootTabState extends State<RootTab> with TickerProviderStateMixin {
         physics: const NeverScrollableScrollPhysics(),
         children: [
           HomeScreen(userInfo: widget.userInfo),
-          Container(),
+          FollowersScreen(
+            userInfo: widget.userInfo,
+          ),
           Container(),
           ProfileScreen(userInfo: widget.userInfo),
         ],

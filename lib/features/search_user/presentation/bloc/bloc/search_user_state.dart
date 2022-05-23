@@ -31,3 +31,8 @@ class SomethingWentWrongState extends SearchUserState {
   @override
   List<Object> get props => [];
 }
+
+class TooManyAttemptsState extends SearchUserState {
+  @override
+  List<Object> get props => [];
+}
